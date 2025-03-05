@@ -14,7 +14,10 @@ import {
 import axios from "axios";
 
 export default function DataDiri(props: any) {
-	const [bangsal, setBangsal] = useState([]);
+	interface Bangsal {
+		nm_bangsal: string;
+	}
+	const [bangsal, setBangsal] = useState<Bangsal[]>([]);
 
 	const layanan = [
 		"POLIKLINIK",
