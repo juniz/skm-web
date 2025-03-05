@@ -12,10 +12,6 @@ class SkmController extends Controller
 {
     public function cekRm(Request $request)
     {
-        $request->validate([
-            'no_rm' => 'required|numeric'
-        ]);
-
         $pasien = Pasien::find($request->no_rm);
         $response = [
             'status' => 'success',
