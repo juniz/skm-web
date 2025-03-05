@@ -84,7 +84,7 @@ export default function Index() {
 			return;
 		}
 		axios
-			.get("/cek-rm", {
+			.get("/api/cek-rm", {
 				params: {
 					no_rm: data.no_rm,
 				},
