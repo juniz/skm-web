@@ -37,6 +37,7 @@ export default function DataDiri(props: any) {
 		"S1",
 		"S2",
 		"S3",
+		"Lainnya",
 	];
 
 	useEffect(() => {
