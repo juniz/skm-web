@@ -10,11 +10,9 @@ Route::get('/', function () {
     return Inertia::render('Skm/Index');
 });
 
-Route::prefix('api')->group(function () {
-    Route::get('cek-rm', [SkmController::class, 'cekRm']);
-    Route::get('bangsal', [SkmController::class, 'bangsal']);
-    Route::post('skm', [SkmController::class, 'submit']);
-});
+Route::get('cek-rm', [SkmController::class, 'cekRm']);
+Route::get('bangsal', [SkmController::class, 'bangsal']);
+Route::post('skm', [SkmController::class, 'submit']);
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
